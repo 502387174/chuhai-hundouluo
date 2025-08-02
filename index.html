@@ -1,244 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play Monster Survivors online - An epic survival game where you battle endless waves of monsters. Free to play directly in your browser!">
-    <meta name="keywords" content="Monster Survivors, online game, survival game, browser game, free game, monster battle">
+    <meta name="description" content="Play Monster Survivors online - Experience the classic Contra gameplay with endless monster battles. Free retro arcade action in your browser!">
+    <meta name="keywords" content="Monster Survivors, Contra online, retro game, arcade game, survival game, browser game, free game">
     <meta name="author" content="MonsterSurvivors.com">
-    <meta property="og:title" content="Monster Survivors - Epic Online Survival Game">
-    <meta property="og:description" content="Battle endless waves of monsters in this thrilling survival game. Play Monster Survivors free online!">
+    <meta property="og:title" content="Monster Survivors - Classic Contra-Style Survival Game">
+    <meta property="og:description" content="Battle through waves of monsters in this Contra-inspired survival game. Play Monster Survivors free online!">
     <meta property="og:url" content="https://monstersurvivors.com">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Monster Survivors - Epic Online Survival Game">
-    <meta name="twitter:description" content="Battle endless waves of monsters in this thrilling survival game. Play free online!">
+    <meta name="twitter:title" content="Monster Survivors - Classic Contra-Style Survival Game">
+    <meta name="twitter:description" content="Experience retro arcade action with modern survival gameplay. Play free online!">
 
     <link rel="canonical" href="https://monstersurvivors.com">
-    <title>Monster Survivors - Play Free Online Survival Game | MonsterSurvivors.com</title>
+    <title>Monster Survivors - Play Classic Contra-Style Survival Game | MonsterSurvivors.com</title>
 
-<style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    :root {
-    --apple-blue: #007AFF;
-    --apple-gray: #8E8E93;
-    --apple-light-gray: #F2F2F7;
-    --apple-dark: #1C1C1E;
-    --apple-white: #FFFFFF;
-    --apple-green: #34C759;
-    --apple-red: #FF3B30;
-    --apple-yellow: #FFCC00;
-}
+        :root {
+            --apple-blue: #007AFF;
+            --apple-gray: #8E8E93;
+            --apple-light-gray: #F2F2F7;
+            --apple-dark: #1C1C1E;
+            --apple-white: #FFFFFF;
+            --apple-green: #34C759;
+            --apple-red: #FF3B30;
+            --apple-yellow: #FFCC00;
+            --apple-purple: #AF52DE;
+        }
 
-    body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--apple-dark);
-    background-color: var(--apple-light-gray);
-}
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--apple-dark);
+            background-color: var(--apple-light-gray);
+        }
 
-    .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-    header {
-    background-color: var(--apple-white);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+        header {
+            background-color: var(--apple-white);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-    nav {
-    padding: 1rem 0;
-}
+        nav {
+            padding: 1rem 0;
+        }
 
-    .logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--apple-blue);
-    text-decoration: none;
-}
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--apple-blue);
+            text-decoration: none;
+        }
 
-    .hero {
-    background: linear-gradient(135deg, var(--apple-blue) 0%, #0051D5 100%);
-    color: var(--apple-white);
-    padding: 3rem 0;
-    text-align: center;
-}
+        .hero {
+            background: linear-gradient(135deg, var(--apple-purple) 0%, var(--apple-blue) 100%);
+            color: var(--apple-white);
+            padding: 3rem 0;
+            text-align: center;
+        }
 
-    h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    letter-spacing: -0.02em;
-}
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
 
-    .tagline {
-    font-size: 1.25rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-}
+        .tagline {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
 
-    .game-section {
-    background-color: var(--apple-white);
-    padding: 2rem 0;
-    margin: 2rem 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.07);
-}
+        .game-section {
+            background-color: var(--apple-white);
+            padding: 2rem 0;
+            margin: 2rem 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+        }
 
-    .game-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
+        .game-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            background-color: #000;
+        }
 
-    .game-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 8px;
-}
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
 
-    h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 2rem 0 1rem;
-    color: var(--apple-dark);
-}
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: var(--apple-dark);
+        }
 
-    .content-section {
-    background-color: var(--apple-white);
-    padding: 3rem 0;
-    margin: 2rem 0;
-    border-radius: 12px;
-}
+        .content-section {
+            background-color: var(--apple-white);
+            padding: 3rem 0;
+            margin: 2rem 0;
+            border-radius: 12px;
+        }
 
-    .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
 
-    .feature-card {
-    background-color: var(--apple-light-gray);
-    padding: 2rem;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
+        .feature-card {
+            background-color: var(--apple-light-gray);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
 
-    .feature-card:hover {
-    transform: translateY(-5px);
-}
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
 
-    .feature-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
 
-    .play-button {
-    display: inline-block;
-    background-color: var(--apple-green);
-    color: var(--apple-white);
-    padding: 12px 32px;
-    border-radius: 24px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    margin: 1rem 0;
-}
+        .play-button {
+            display: inline-block;
+            background-color: var(--apple-green);
+            color: var(--apple-white);
+            padding: 12px 32px;
+            border-radius: 24px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin: 1rem 0;
+        }
 
-    .play-button:hover {
-    background-color: #2FB24C;
-    transform: scale(1.05);
-}
+        .play-button:hover {
+            background-color: #2FB24C;
+            transform: scale(1.05);
+        }
 
-    footer {
-    background-color: var(--apple-dark);
-    color: var(--apple-white);
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 4rem;
-}
+        .controls-table {
+            background-color: var(--apple-light-gray);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
 
-    .footer-text {
-    opacity: 0.8;
-    font-size: 0.9rem;
-}
+        .controls-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-    /* Mobile Responsive */
-    @media (max-width: 768px) {
-    h1 {
-    font-size: 2rem;
-}
+        .controls-table th,
+        .controls-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
 
-    h2 {
-    font-size: 1.5rem;
-}
+        .controls-table th {
+            font-weight: 600;
+            color: var(--apple-blue);
+        }
 
-    .tagline {
-    font-size: 1rem;
-}
+        footer {
+            background-color: var(--apple-dark);
+            color: var(--apple-white);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
 
-    .hero {
-    padding: 2rem 0;
-}
+        .footer-text {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
 
-    .content-section {
-    padding: 2rem 0;
-}
+        .badge {
+            display: inline-block;
+            background-color: var(--apple-red);
+            color: var(--apple-white);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-left: 0.5rem;
+        }
 
-    .feature-card {
-    padding: 1.5rem;
-}
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
 
-    .game-container {
-    padding-bottom: 75%; /* Better aspect ratio for mobile */
-}
-}
+            h2 {
+                font-size: 1.5rem;
+            }
 
-    /* Loading animation */
-    .loading {
-    text-align: center;
-    padding: 2rem;
-    color: var(--apple-gray);
-}
+            .tagline {
+                font-size: 1rem;
+            }
 
-    .loading::after {
-    content: '...';
-    animation: dots 1.5s steps(4, end) infinite;
-}
+            .hero {
+                padding: 2rem 0;
+            }
 
-    @keyframes dots {
-    0%, 20% {
-    content: '.';
-}
-    40% {
-    content: '..';
-}
-    60%, 100% {
-    content: '...';
-}
-}
-</style>
+            .content-section {
+                padding: 2rem 0;
+            }
+
+            .feature-card {
+                padding: 1.5rem;
+            }
+
+            .game-container {
+                padding-bottom: 75%; /* Better aspect ratio for mobile */
+            }
+
+            .controls-table {
+                overflow-x: auto;
+            }
+        }
+
+        /* Loading animation */
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: var(--apple-gray);
+        }
+
+        .loading::after {
+            content: '...';
+            animation: dots 1.5s steps(4, end) infinite;
+        }
+
+        @keyframes dots {
+            0%, 20% {
+                content: '.';
+            }
+            40% {
+                content: '..';
+            }
+            60%, 100% {
+                content: '...';
+            }
+        }
+
+        /* Retro style elements */
+        .retro-badge {
+            background: linear-gradient(45deg, var(--apple-yellow), var(--apple-red));
+            color: var(--apple-white);
+            padding: 6px 16px;
+            border-radius: 16px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 1rem 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -250,95 +303,158 @@
 <section class="hero">
     <div class="container">
         <h1>Monster Survivors</h1>
-        <p class="tagline">Survive endless waves of monsters in this thrilling online adventure!</p>
+        <p class="tagline">Classic Contra-style action meets modern survival gameplay!</p>
+        <div class="retro-badge">🎮 RETRO ARCADE ACTION</div>
+        <br>
         <a href="#game" class="play-button">Play Now - Free!</a>
     </div>
 </section>
 
 <main class="container">
     <section id="game" class="game-section">
-        <h2>Play Monster Survivors Online</h2>
+        <h2>Play Monster Survivors Online <span class="badge">CONTRA EDITION</span></h2>
         <div class="game-container">
             <div class="loading">Loading game</div>
             <iframe
-                src="https://www.yikm.net/"
-                title="Monster Survivors Game"
-                allowfullscreen
-                loading="lazy"
-                onload="this.previousElementSibling.style.display='none'">
+                    src="https://www.yikm.net/play?id=4137"
+                    title="Monster Survivors - Contra Edition Game"
+                    allowfullscreen
+                    loading="lazy"
+                    onload="this.previousElementSibling.style.display='none'">
             </iframe>
         </div>
     </section>
 
     <section class="content-section">
         <h2>About Monster Survivors</h2>
-        <p>Monster Survivors is an exhilarating online survival game where players face relentless waves of increasingly powerful monsters. Armed with an arsenal of weapons and special abilities, you must strategize, adapt, and survive for as long as possible in this action-packed browser game.</p>
+        <p>Monster Survivors brings the legendary Contra gameplay into the modern era with endless survival mechanics. Experience the nostalgic run-and-gun action as you face infinite waves of monsters, collect power-ups, and fight for the highest score. This browser-based adaptation captures all the excitement of the classic arcade game while adding fresh survival elements that keep you coming back for more.</p>
 
         <h2>Game Features</h2>
         <div class="feature-grid">
             <div class="feature-card">
-                <div class="feature-icon">⚔️</div>
-                <h3>Epic Battles</h3>
-                <p>Engage in intense combat with diverse monster types, each presenting unique challenges and attack patterns.</p>
+                <div class="feature-icon">🔫</div>
+                <h3>Classic Contra Action</h3>
+                <p>Enjoy the authentic run-and-gun gameplay with spread shots, rapid fire, and legendary power-ups from the original Contra.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🎮</div>
-                <h3>Free to Play</h3>
-                <p>Jump straight into the action! No downloads or installations required - play directly in your browser.</p>
+                <div class="feature-icon">👾</div>
+                <h3>Endless Monster Waves</h3>
+                <p>Face increasingly challenging hordes of monsters. How long can you survive against the relentless alien invasion?</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">📱</div>
-                <h3>Cross-Platform</h3>
-                <p>Enjoy seamless gameplay on any device - desktop, tablet, or mobile. Your survival adventure goes wherever you go!</p>
+                <div class="feature-icon">🏆</div>
+                <h3>Retro Arcade Experience</h3>
+                <p>Relive the golden age of arcade gaming with pixel-perfect graphics and that classic 8-bit soundtrack.</p>
             </div>
+        </div>
+
+        <h2>Game Controls</h2>
+        <div class="controls-table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Action</th>
+                    <th>Keyboard</th>
+                    <th>Gamepad</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Move</td>
+                    <td>Arrow Keys</td>
+                    <td>D-Pad</td>
+                </tr>
+                <tr>
+                    <td>Jump</td>
+                    <td>Z / Space</td>
+                    <td>A Button</td>
+                </tr>
+                <tr>
+                    <td>Shoot</td>
+                    <td>X / Ctrl</td>
+                    <td>B Button</td>
+                </tr>
+                <tr>
+                    <td>Start/Pause</td>
+                    <td>Enter</td>
+                    <td>Start Button</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
 
         <h2>How to Play Monster Survivors</h2>
         <ol style="margin-left: 2rem; line-height: 2;">
-            <li>Click "Play Now" to start your survival journey</li>
-            <li>Use keyboard controls or touch gestures to move your character</li>
-            <li>Collect power-ups and weapons scattered across the battlefield</li>
-            <li>Defeat monsters to earn points and unlock new abilities</li>
-            <li>Survive as long as possible and climb the leaderboard!</li>
+            <li>Click "Play Now" to start your retro survival adventure</li>
+            <li>Use arrow keys to move and navigate through the battlefield</li>
+            <li>Press shoot button to eliminate approaching monsters</li>
+            <li>Collect weapon power-ups to increase your firepower</li>
+            <li>Avoid enemy fire and contact - you have limited lives!</li>
+            <li>Survive as long as possible and achieve the highest score</li>
         </ol>
 
         <h2>Why Play Monster Survivors?</h2>
-        <p>Monster Survivors combines the best elements of survival games with accessible browser-based gameplay. Whether you're a casual gamer looking for quick entertainment or a hardcore player seeking a challenge, Monster Survivors offers endless replayability with its dynamic difficulty scaling and varied monster encounters. The game's intuitive controls and polished graphics ensure an enjoyable experience for players of all skill levels.</p>
+        <p>Monster Survivors perfectly blends the timeless appeal of Contra with modern browser gaming convenience. Whether you're a veteran who played the original in arcades or a new player discovering this classic for the first time, you'll find the perfect balance of challenge and nostalgia. The game's pick-up-and-play nature makes it ideal for quick gaming sessions, while the increasing difficulty ensures long-term engagement for those seeking to master every pattern and achieve record-breaking survival times.</p>
+
+        <h2>Pro Tips for Monster Survivors</h2>
+        <ul style="margin-left: 2rem; line-height: 2;">
+            <li><strong>Spread Shot is King:</strong> The spread gun remains the most versatile weapon for crowd control</li>
+            <li><strong>Keep Moving:</strong> Standing still is certain death - always be on the move</li>
+            <li><strong>Learn Enemy Patterns:</strong> Each monster type has predictable movements - study and exploit them</li>
+            <li><strong>Power-Up Priority:</strong> Grab weapon upgrades immediately, they're essential for survival</li>
+            <li><strong>Use the Environment:</strong> Position yourself strategically to funnel enemies into kill zones</li>
+        </ul>
 
         <div style="text-align: center; margin: 3rem 0;">
-            <a href="#game" class="play-button">Start Playing Now!</a>
+            <a href="#game" class="play-button">Start Your Survival Run!</a>
         </div>
     </section>
 </main>
 
 <footer>
     <div class="container">
-        <p class="footer-text">&copy; 2024 MonsterSurvivors.com. All rights reserved. Play Monster Survivors online for free!</p>
+        <p class="footer-text">&copy; 2024 MonsterSurvivors.com. All rights reserved. Experience classic Contra action in Monster Survivors!</p>
     </div>
 </footer>
 
 <script>
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
     });
-});
 
     // Add loading state management
     window.addEventListener('load', function() {
-    const iframe = document.querySelector('iframe');
-    iframe.addEventListener('load', function() {
-    this.style.opacity = '1';
-});
-});
+        const iframe = document.querySelector('iframe');
+        iframe.addEventListener('load', function() {
+            this.style.opacity = '1';
+        });
+    });
+
+    // Add Konami code easter egg
+    let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    let konamiIndex = 0;
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === konamiCode[konamiIndex]) {
+            konamiIndex++;
+            if (konamiIndex === konamiCode.length) {
+                alert('30 Lives Activated! Just kidding - but nice try! 😄');
+                konamiIndex = 0;
+            }
+        } else {
+            konamiIndex = 0;
+        }
+    });
 </script>
 </body>
 </html>
